@@ -1,0 +1,995 @@
+﻿[Dictionary]
+Version=CSPro 7.1
+Label=LFS-RFMT-0121
+Name=LFS_RFMT_0121_PUF
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=Yes
+DecimalChar=No
+
+[Level]
+Label=Questionnaire
+Name=QUEST
+
+[IdItems]
+
+[Item]
+Label=Region
+Name=PUFREG
+Start=2
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Region
+Name=PUFREG_VS1
+Value=13;National Capital Region  (NCR)
+Value=14;Cordillera Administrative Region  (CAR)
+Note=Abra\r\n
+Note=Benguet\r\n
+Note=Ifugao\r\n
+Note=Kalinga \r\n
+Note=Apayao    \r\n
+Note=Mountain Province
+Value=1;Region I  (Ilocos Region)
+Note=Ilocos Norte\r\n
+Note=Ilocos Sur\r\n
+Note=La Union\r\n
+Note=Pangasinan
+Value=2;Region II  (Cagayan Valley)
+Note=Batanes\r\n
+Note=Cagayan \r\n
+Note=Isablela\r\n
+Note=Nueva Vizcaya\r\n
+Note=Qirino
+Value=3;Region III  (Central Luzon)
+Note=Bataan\r\n
+Note=Bulacan\r\n
+Note=Nueva Ecija\r\n
+Note=Pampanga\r\n
+Note=Tarlac\r\n
+Note=Zambales\r\n
+Note=Aurora
+Value=4;Region IV-A  (CALABARZON)
+Note=Batangas\r\n
+Note=Cavite\r\n
+Note=Laguna\r\n
+Note=Quezon\r\n
+Note=Rizal
+Value=17;MIMAROPA Region
+Note=Marinduque\r\n
+Note=Occidental Mindoro\r\n
+Note=Oriental Mindoro\r\n
+Note=Palawan\r\n
+Note=Romblon
+Value=5;Region V  (Bicol Region)
+Note=Albay\r\n
+Note=Camarines Norte\r\n
+Note=Camarines Sur\r\n
+Note=Catanduanes\r\n
+Note=Masbate\r\n
+Note=Sorsogon
+Value=6;Region VI  (Western Visayas)
+Note=Aklan\r\n
+Note=Antique\r\n
+Note=Capiz\r\n
+Note=Iloilo\r\n
+Note=Negros Occidental\r\n
+Note=Guimaras
+Value=7;Region VII  (Central Visayas)
+Note=Bohol\r\n
+Note=Cebu\r\n
+Note=Negros Oriental\r\n
+Note=Siquijor
+Value=8;Region VIII  (Eastern Visayas)
+Note=Eastern Samar\r\n
+Note=Leyte\r\n
+Note=Northern Samar\r\n
+Note=Samar (Western)\r\n
+Note=Southern Leyte\r\n
+Note=Biliran
+Value=9;Region IX  (Zamboanga Peninsula)
+Note=Isabela City\r\n
+Note=Zamboanga del Norte\r\n
+Note=Zamboanga del Sur\r\n
+Note=Zamboanga Sibugay
+Value=10;Region X  (Northern Mindanao)
+Note=Bukidnon\r\n
+Note=Camiguin\r\n
+Note=Lanao del Norte\r\n
+Note=Misamis Occidental\r\n
+Note=Misamis Oriental
+Value=11;Region XI  (Davao Region)
+Note=Davao (Davao del Norte)\r\n
+Note=Davao del Sur\r\n
+Note=Davao Oriental\r\n
+Note=Campostela Valley
+Value=12;Region XII  (SOCCSKSARGEN)
+Note=Sultan Kudarat\r\n
+Note=Cotabato City\r\n
+Note=North Cotabato\r\n
+Note=South Cotabato\r\n
+Note=Sarangani
+Value=16;Region XIII  (Caraga)
+Note=Agusan del Norte\r\n
+Note=Agusan del Sur\r\n
+Note=Surigao del Norte  \r\n
+Note=Surigao del Sur
+Value=15;Autonomous Region in Muslim Mindanao  (ARMM)
+Note=Basilan\r\n
+Note=Lanao del Sur\r\n
+Note=Maguindanao\r\n
+Note=Sulu\r\n
+Note=Tawi-tawi
+
+[Item]
+Label=Household Unique Sequential Number
+Name=PUFHHNUM
+Note=\r\n
+Note=HHNUM - is a unique household number at national level
+Start=4
+Len=5
+ZeroFill=Yes
+
+[Record]
+Label=Household Members
+Name=HHMEM
+RecordTypeValue='2'
+Required=No
+MaxRecords=35
+RecordLen=98
+
+[Item]
+Label=2015Urban-RuralFIES
+Name=PUFURB2015
+Start=9
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=2015Urban-RuralFIES
+Name=PUFURB2015_VS1
+Value=1;Urban
+Value=2;Rural
+
+[Item]
+Label=Final Weight
+Name=PUFPWGTPRV
+Start=10
+Len=10
+Decimal=4
+ZeroFill=Yes
+
+[Item]
+Label=Survey Month
+Name=PUFSVYMO
+Start=20
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Survey Month
+Name=PUFSVYMO_VS1
+Value=1;January
+Value=4;April
+Value=7;July
+Value=10;October
+
+[Item]
+Label=Survey Year
+Name=PUFSVYYR
+Start=22
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=Psu Number
+Name=PUFPSU
+Start=26
+Len=5
+ZeroFill=Yes
+
+[Item]
+Label=Replicate
+Name=PUFRPL
+Start=31
+Len=3
+ZeroFill=Yes
+
+[Item]
+Label=Household Size
+Name=PUFHHSIZE
+Start=34
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Household Size
+Name=PUFHHSIZE_VS1
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+
+[Item]
+Label=C101-Line Number
+Name=PUFC01_LNO
+Start=36
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=C101-Line Number
+Name=PUFC01_LNO_VS1
+Value=1:35
+
+[Item]
+Label=C03-Relationship to Household Head
+Name=PUFC03_REL
+Start=38
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=C03-Relationship to Household Head
+Name=PUFC03_REL_VS1
+Value=1;Head
+Value=2;Wife/Spouse
+Value=3;Son/daughter
+Value=4;Brothers/sisters
+Value=5;Son/daughter_law
+Value=6;Grandchildren
+Value=7;Father/Mother
+Value=8;Other Relative
+Value=9;Boarder
+Value=10;Domestic Helper
+Value=11;Non_Relative
+
+[Item]
+Label=C04-Sex
+Name=PUFC04_SEX
+Start=40
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C04-Sex
+Name=PUFC04_SEX_VS1
+Value=1;Male
+Value=2;Female
+
+[Item]
+Label=C05-Age as of Last Birthday
+Name=PUFC05_AGE
+Start=41
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=C07-Age as of Last Birthday
+Name=PUFC05_AGE_VS3
+Value=0:14;00 - 14
+Value=15:24;15 - 24
+Value=25:34;25 - 34
+Value=35:44;35 - 44
+Value=45:54;45 - 54
+Value=55:64;55 - 64
+Value=65:99;65 and Over
+
+[Item]
+Label=C06-Marital Status
+Name=PUFC06_MSTAT
+Start=43
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C06-Marital Status
+Name=PUFC06_MSTAT_VS1
+Value=1;Single
+Value=2;Married
+Value=3;Widowed
+Value=4;Divorce/Separate
+Value=5;Annulled
+Value=6;Unknown
+
+[Item]
+Label=C07-Highest Grade Completed
+Name=PUFC07_GRADE
+Start=44
+Len=5
+ZeroFill=Yes
+
+[ValueSet]
+Label=C07-Highest Grade Completed
+Name=PUFC07_GRADE_VS1
+Value=0:1000 2000;No grade completed
+
+[ValueSet]
+Label=Elementary
+Name=PUFC07_GRADE_VS2
+Value=10011:10015 10004:10006;   Undergraduate
+Value=10018;   Graduate
+
+[ValueSet]
+Label=Junior High School
+Name=PUFC07_GRADE_VS3
+Value=24011:24013 24004:24006;   Undergraduate
+Value=24014:24015;   Completed
+
+[ValueSet]
+Label=Senior High School
+Name=PUFC07_GRADE_VS4
+Value=34011 34021 34031 35011;   Undergraduate
+Value=34013 34023 34033 35013;   Graduate
+
+[ValueSet]
+Label=Post Secondary
+Name=PUFC07_GRADE_VS5
+Value=40001:40003 50001:50003;   Undergraduate
+Value=40011:49999 50011:59999;   Graduate
+
+[ValueSet]
+Label=College
+Name=PUFC07_GRADE_VS6
+Value=60001:60006;   Undergraduate
+Value=60000 60011:69999 70000:79999 80000:89999;   Graduate
+
+[Item]
+Label=C08-Currently Attending School
+Name=PUFC08_CURSCH
+Start=49
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C08-Currently Attending School
+Name=PUFC08_CURSCH_VS1
+Value=1;yes
+Value=2;no
+Value=' ';not 5:24 yrs old
+Name=NOTAPPL,Special
+
+[Item]
+Label=C09-Graduate of technical/vocational course
+Name=PUFC09_GRADTECH
+Note=new item, started only January 2012
+Start=50
+Len=1
+
+[ValueSet]
+Label=C09-Graduate of technical/vocational course
+Name=PUFC09_GRADTECH_VS1
+Value=1;yes
+Value=2;no
+
+[Item]
+Label=C09a - Currently Attending Non-formal Training for Skills Development
+Name=PUFC09A_NFORMAL
+Note=This Question started/implemented starting January 2012
+Start=51
+Len=1
+
+[ValueSet]
+Label=C09a - Currently Attending Non-formal Training for Skills Development
+Name=PUFC09A_NFORMAL_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=C10-Overseas Filipino Indicator
+Name=PUFC10_CONWR
+Start=52
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C10-Overseas Filipino Indicator
+Name=PUFC10_CONWR_VS1
+Value=1;Overseas Contract Workers
+Value=2;Workers other than OCW
+Value=3;Employees in Philippine Embassy, Consulates & other Missions
+Value=4;Students abroad/Tourists
+Value=5;Resident
+Value=' ';Less than 15 Years Old
+Name=NOTAPPL,Special
+
+[Item]
+Label=C11-Work Indicator
+Name=PUFC11_WORK
+Start=53
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C11-Work Indicator
+Name=PUFC11_WORK_VS1
+Value=1;YES, working in the default place of work except home
+Value=2;YES, telecommuting
+Value=3;YES, home-based work
+Value=4;YES, on job rotation
+Value=5;YES, on a mixed mode working arrangement
+Value=6;YES, on reduced hours
+Value=7;NO
+
+[Item]
+Label=C12-Job Indicator
+Name=PUFC12_JOB
+Start=54
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C12-Job Indicator
+Name=PUFC12_JOB_VS1
+Value=1;yes
+Value=2;no
+Value=3;no, temporarily
+
+[Item]
+Label=C14-Primary Occupation
+Name=PUFC14_PROCC
+Start=55
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=C14-Primary Occupation
+Name=PUFC14_PROCC_VS1
+Value=11:14;Managers
+Value=21:26;Professionals
+Value=31:35;Technicians and Associate Professionals
+Value=41:44;Clerical Support Workers
+Value=51:54;Service and Sales Workers
+Value=61:63;Skilled Agricultural, Forestry and Fishery Workers
+Value=71:75;Craft and Related Trades Workers
+Value=81:83;Plant and Machine Operators and Assemblers
+Value=91:96;Elementary Occupations
+Value=1:3;Armed Forces Occupations
+
+[Item]
+Label=C16-Kind of Business (Primary Occupation)
+Name=PUFC16_PKB
+Start=57
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=C16-Kind of Business (Primary Occupation)
+Name=PUFC16_PKB_VS1
+Value=1:3;AGRICULTURE
+Value=1:2;   Agriculture and Forestry
+Value=3;   Fishing and Aquaculture
+Value=5:43;INDUSTRY
+Value=5:9;   Mining and Quarying
+Value=10:33;   Manufacturing
+Value=35;   Electricity, Gas, Steam and Airconditioning Supply
+Value=36:39;   Water Supply; Sewerage, Waste Management and Remediation Activities
+Value=41:43;   Construction
+Value=45:99;SERVICES
+Value=45:47;   Whosale and Retail Trade; Repair of Motor Vehicles and Motorcycles
+Value=49:53;   Transportation and Storage
+Value=55:56;   Accommodation and Food Service Activities
+Value=58:63;   Information and Communication
+Value=64:66;   Financial and Insurance Activities
+Value=68;   Real Estate Activities
+Value=69:75;   Professional, Scientific  and Technical Activities
+Value=77:82;   Administrative and Support Service Activities
+Value=84;   Public Administration and Defense; Compulsory Social Security
+Value=85;   Education
+Value=86:88;   Human Health and Social Work Activities
+Value=90:93;   Arts, Entertainment and Recreation
+Value=94:96;   Other Service Activities
+Value=97:98;   Activities of Households as Employers
+Value=99;   Activities of Extraterritorial Organizations and Bodies
+
+[Item]
+Label=C17-Nature of Employment (Primary Occupation)
+Name=PUFC17_NATEM
+Start=59
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C17-Nature of Employment (Primary Occupation)
+Name=PUFC17_NATEM_VS1
+Value=1;Permanent Job/Business/Unpaid Family Work
+Value=2;Short-Term/Seasonal Job/Business/Unpaid Family Work
+Value=3;Worked for Different Employers on Day to Day or Week to Week Basis
+
+[Item]
+Label=C18-Normal Working Hours per Day
+Name=PUFC18_PNWHRS
+Start=60
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=C18-Normal Working Hours per Day
+Name=PUFC18_PNWHRS_VS1
+Value=1:16 99 0
+
+[Item]
+Label=C19-Total Number of Hours Worked during the past week
+Name=PUFC19_PHOURS
+Start=62
+Len=3
+ZeroFill=Yes
+
+[ValueSet]
+Label=C19-Total Number of Hours Worked during the past week
+Name=PUFC19_PHOURS_VS1
+Value=0;Did not work
+Value=1:19;Less thnan 20
+Value=20:29;20 to 29
+Value=30:39;30 to 39
+Value=40:112;40 and over
+
+[ValueSet]
+Label=did not work
+Name=PUFC19_PHOURS_VS2
+Value=0;Did not work
+
+[ValueSet]
+Label=Total Hours Worked
+Name=PUFC19_PHOURS_VS3
+Value=1:19;Under 20
+Value=20:29;20 - 29
+Value=30:39;30 - 39
+Value=40:112;40 and over
+
+[ValueSet]
+Label=Total Hours Worked
+Name=PUFC19_PHOURS_VS4
+Value=0:39;Worked less than 40  hours*
+Value=40:112;Worked 40 hours and over
+
+[Item]
+Label=C20-Want More Hours of Work
+Name=PUFC20_PWMORE
+Start=65
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C20-Want More Hours of Work
+Name=PUFC20_PWMORE_VS1
+Value=1;yes
+Value=2;no
+
+[Item]
+Label=C21-Look for Additional Work
+Name=PUFC21_PLADDW
+Start=66
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C21-Look for Additional Work
+Name=PUFC21_PLADDW_VS1
+Value=1;yes
+Value=2;no
+
+[Item]
+Label=C22-First Time to Work
+Name=PUFC22_PFWRK
+Start=67
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C22-First Time to Work
+Name=PUFC22_PFWRK_VS1
+Value=1;yes
+Value=2;no
+
+[Item]
+Label=C23-Class of Worker (Primary Occupation)
+Name=PUFC23_PCLASS
+Start=68
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C23-Class of Worker (Primary Occupation)
+Name=PUFC23_PCLASS_VS1
+Value=0;Private Household
+Value=1;Private Establishment
+Value=2;Gov't/Gov't Corporation
+Value=3;Self Employed
+Value=4;Employer
+Value=5;With pay (Family owned Business)
+Value=6;Without Pay (Family owned Business)
+
+[ValueSet]
+Label=C23-Class of Worker (Primary Occupation)
+Name=PUFC23_PCLASS_VS2
+Value=0:2 5;Wage and salary workers
+Value=0;Worked for private household
+Value=1;Worked for private establishment
+Value=2;Worked for government or government-controlled corporation
+Value=5;Worked with pay in own family-operated farm or business
+Value=3;Self Employed without any paid employee
+Value=4;Employer on own family-operated farm or business
+Value=6;Worked without pay in own family-operated farm or business
+
+[Item]
+Label=C24-Basis of Payment (Primary Occupation)
+Name=PUFC24_PBASIS
+Start=69
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C24-Basis of Payment (Primary Occupation)
+Name=PUFC24_PBASIS_VS1
+Value=0;In Kind only
+Value=1;Per piece
+Value=2;Per Hour
+Value=3;Per Day
+Value=4;Monthly
+Value=5;Pakyaw
+Value=6;Other S./Wages
+Value=7;Not salaries/wages(Commission Basis)
+
+[Item]
+Label=C25-Basic Pay per Day (Primary Occupation)
+Name=PUFC25_PBASIC
+Start=70
+Len=5
+ZeroFill=Yes
+
+[ValueSet]
+Label=C25-Basic Pay per Day (Primary Occupation)
+Name=PUFC25_PBASIC_VS1
+Value=0:100;Less than 100
+Value=100:499;100  -   499
+Value=500:999; 500 -   999
+Value=1000:1499;1000 - 1499
+Value=1500:1999;1500 - 1999
+Value=2000:2499;2000 - 2499
+Value=2500:2999;2500 - 2999
+Value=3000:3999;3000 - 3499
+Value=3500:3999;3500 - 3999
+Value=4000:4499;4000 - 4499
+Value=4500:4999;4500 - 4999
+Value=5000:5499;5000 - 5499
+Value=5500:5999;5500 - 5999
+Value=6000:6499;6000 - 6499
+Value=6500:6999;6500 - 6999
+Value=7000:7499;7000 - 7499
+Value=7500:7999;7500 - 7999
+Value=8000:8499;8000 - 8499
+Value=8500:8999;8500 - 8999
+Value=9000:9499;9000 - 9499
+Value=9500:99998;9500 - 99998
+
+[Item]
+Label=C26-Other Job Indicator
+Name=PUFC26_OJOB
+Start=75
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C26-Other Job Indicator
+Name=PUFC26_OJOB_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=C27-Number of Jobs during the past week
+Name=PUFC27_NJOBS
+Start=76
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C27-Number of Jobs during the past week
+Name=PUFC27_NJOBS_VS1
+Value=1:9;valid
+
+[Item]
+Label=C28-Total Hours Worked for all Jobs
+Name=PUFC28_THOURS
+Start=77
+Len=3
+ZeroFill=Yes
+
+[ValueSet]
+Label=C28-Total Hours Worked for all Jobs
+Name=PUFC28_THOURS_VS1
+Value=1:48 49:168 0;valid
+
+[Item]
+Label=C29-Reasons for Working More than 48 Hours during the past week
+Name=PUFC29_WWM48H
+Start=80
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=C29-Reasons for Working More than 48 Hours during the past week
+Name=PUFC29_WWM48H_VS1
+Value=11;Wanted more earnings
+Value=12;Requirements of the job
+Value=13;Exceptional week
+Value=14;Ambition, passion for job
+Value=15;ECQ/Lockdown/Covid-19 Pandemic
+Value=19;Other reasons
+Value=20;Variable working time / nature of work
+Value=21;Holidays
+Value=22;Poor business condition
+Value=23;Reduction in clients / work
+Value=24;Low or off season
+Value=25;Bad weather, natural disaster
+Value=26;Strike or labour dispute
+Value=27;Start / end / change of job
+Value=28;Could only find part time work
+Value=29;School training
+Value=30;Personal / family reasons
+Value=31;Health / medical limitations
+Value=32;ECQ/Lockdown/Covid-19 Pandemic
+Value=39;Other reasons, specify
+
+[Item]
+Label=C30-Looked for Work or Tried to Establish Business during the past week
+Name=PUFC30_LOOKW
+Start=82
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C30-Looked for Work or Tried to Establish Business during the past week
+Name=PUFC30_LOOKW_VS1
+Value=1;yes
+Value=2;no
+
+[Item]
+Label=C31-First Time to Look for Work
+Name=PUFC31_FLWRK
+Start=83
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C31-First Time to Look for Work
+Name=PUFC31_FLWRK_VS1
+Value=1;yes
+Value=2;no
+
+[Item]
+Label=C32-Job Search Method
+Name=PUFC32_JOBSM
+Start=84
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C32-Job Search Method
+Name=PUFC32_JOBSM_VS1
+Value=1;registered in public employment agency
+Value=2;registered in private employment agency
+Value=3;approached employer directly
+Value=4;approached relatives or friends
+Value=5;placed or answered advertisements
+Value=6;others
+
+[Item]
+Label=C33-Number of Weeks Spent in Looking for Work
+Name=PUFC33_WEEKS
+Start=85
+Len=3
+ZeroFill=Yes
+
+[ValueSet]
+Label=C33-Number of Weeks Spent in Looking for Work
+Name=PUFC33_WEEKS_VS1
+Value=1:3;less than 4
+Value=4:9;4 - 9
+Value=10:19;10 - 19
+Value=20:155;20 and over
+
+[ValueSet]
+Label=Number of Weeks Looking for Work
+Name=PUFC33_WEEKS_VS2
+Value=1:3;less than 4
+Value=4:9;4  to  9
+Value=10:19;10 to 19
+Value=20:155;20 and over
+
+[Item]
+Label=C34-Reason for not Looking for Work
+Name=PUFC34_WYNOT
+Start=88
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C34-Reason for not Looking for Work
+Name=PUFC34_WYNOT_VS1
+Value=0;ECQ/Lockdown/Covid-19 Pandemic
+Value=1;Tired/Believe no Work Available
+Value=2;Awaiting Results of Previous Job Application
+Value=3;Temporary Illness/Disability
+Value=4;Bad Weather
+Value=5;Wait for rehire/Job Recall
+Value=6;Too young/old or Retired/Permanent Disability
+Value=7;Household, family duties
+Value=8;Schooling
+Value=9;Others
+
+[Item]
+Label=C35-When Last Looked for Work
+Name=PUFC35_LTLOOKW
+Start=89
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C35-When Last Looked for Work
+Name=PUFC35_LTLOOKW_VS1
+Value=1;Within last month
+Value=2;One to six months ago
+Value=3;More than six months ago
+
+[Item]
+Label=C36-Available for Work
+Name=PUFC36_AVAIL
+Start=90
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C36-Available for Work
+Name=PUFC36_AVAIL_VS1
+Value=1;yes available
+Value=2;not available
+
+[Item]
+Label=C37-Willingness to take up work during the past week or withing two weeks
+Name=PUFC37_WILLING
+Start=91
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C37-Willingness to take up work during the past week or withing two weeks
+Name=PUFC37_WILLING_VS1
+Value=1;yes
+Value=2;no
+
+[Item]
+Label=C38-Previous Job Indicator
+Name=PUFC38_PREVJOB
+Start=92
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C38-Previous Job Indicator
+Name=PUFC38_PREVJOB_VS1
+Value=1;yes
+Value=2;no
+
+[Item]
+Label=C40-Previous Occupation
+Name=PUFC40_POCC
+Start=93
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=C40-Previous Occupation
+Name=PUFC40_POCC_VS1
+Value=11:14;Managers
+Value=21:26;Professionals
+Value=31:35;Technicians and Associate Professionals
+Value=41:44;Clerical Support Workers
+Value=51:54;Service and Sales Workers
+Value=61:63;Skilled Agricultural, Forestry and Fishery Workers
+Value=71:75;Craft and Related Trades Workers
+Value=81:83;Plant and Machine Operators and Assemblers
+Value=91:96;Elementary Occupations
+Value=1:3;Armed Forces Occupations
+
+[Item]
+Label=C41-Did work or had a job during the past quarter
+Name=PUFC41_WQTR
+Start=95
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=C41-Did work or had a job during the past quarter
+Name=PUFC41_WQTR_VS1
+Value=1;yes
+Value=2;no
+
+[Item]
+Label=C43-Kind of Business (past quarter)
+Name=PUFC43_QKB
+Start=96
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=C43-Kind of Business (past quarter)
+Name=PUFC43_QKB_VS1
+Value=1:3;AGRICULTURE
+Value=1:2;   Agriculture and Forestry
+Value=3;   Fishing and Aquaculture
+Value=5:43;INDUSTRY
+Value=5:9;   Mining and Quarying
+Value=10:33;   Manufacturing
+Value=35;   Electricity, Gas, Steam and Airconditioning Supply
+Value=36:39;   Water Supply; Sewerage, Waste Management and Remediation Activities
+Value=41:43;   Construction
+Value=45:99;SERVICES
+Value=45:47;   Whosale and Retail Trade; Repair of Motor Vehicles and Motorcycles
+Value=49:53;   Transportation and Storage
+Value=55:56;   Accommodation and Food Service Activities
+Value=58:63;   Information and Communication
+Value=64:66;   Financial and Insurance Activities
+Value=68;   Real Estate Activities
+Value=69:75;   Professional, Scientific  and Technical Activities
+Value=77:82;   Administrative and Support Service Activities
+Value=84;   Public Administration and Defense; Compulsory Social Security
+Value=85;   Education
+Value=86:88;   Human Health and Social Work Activities
+Value=90:93;   Arts, Entertainment and Recreation
+Value=94:96;   Other Service Activities
+Value=97:98;   Activities of Households as Employers
+Value=99;   Activities of Extraterritorial Organizations and Bodies
+
+[Item]
+Label=New Employment Criteria (jul 05, 2005)
+Name=PUFNEWEMPSTAT
+Start=98
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=New Employment Criteria (jul 05, 2005)
+Name=PUFNEWEMPSTAT_VS1
+Value=1;EMPLOYED
+Value=2;UNEMPLOYED
+Value=3;NOT IN THE LABOR FORCE
+
+[ValueSet]
+Label=Total Labor Force
+Name=PUFNEWEMPSTAT_VS2
+Value=1;Employed
+Value=2;Unemployed
+
+[ValueSet]
+Label=Not in the Labor Force
+Name=PUFNEWEMPSTAT_VS3
+Value=3;Not in the Labor Force
