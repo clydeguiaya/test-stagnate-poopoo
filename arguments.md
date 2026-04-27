@@ -191,7 +191,7 @@ The `actual_hours` coefficient dominating negatively is expected: workers who ar
 
 ---
 
-## 11. Linear SVM Model
+## 10. Linear SVM Model
 
 **Why LinearSVC as a comparison model?**
 
@@ -221,7 +221,7 @@ The sign pattern matches logistic regression, validating that both linear models
 
 ---
 
-## 12. GDP Per Person Employed as a Macro Feature
+## 11. GDP Per Person Employed as a Macro Feature
 
 GDP per person employed (constant 2021 PPP $) is a **year-level macro control** that captures the aggregate productivity environment faced by all workers in a given year. This is distinct from individual-level wages (not available in the LFS) and captures:
 - Post-COVID recovery dynamics (2021 rebound, 2022 contraction)
@@ -234,7 +234,7 @@ GDP per person employed (constant 2021 PPP $) is a **year-level macro control** 
 
 ---
 
-## 13. Education Level Encoding
+## 12. Education Level Encoding
 
 The PSA `PUFC07_GRADE` is a 5-digit code where the **first digit encodes the education system level**:
 
@@ -253,7 +253,7 @@ The first digit is extracted as `education_level` (0–7) solely to evaluate the
 
 ---
 
-## 14. Occupation and Industry Encoding
+## 13. Occupation and Industry Encoding
 
 **Occupation:** PSOC (Philippine Standard Occupational Classification) 2-digit code. The first digit is extracted as `occupation_major` (1–9) solely to evaluate the C3 criterion (`occupation_major == 9`). Both `occupation_code` and `occupation_major` are dropped from the dataset immediately after the target is constructed and are not available as model features.
 
@@ -276,7 +276,7 @@ The `psic_sector` mapping used in the pipeline:
 
 ---
 
-## 15. Cyclical Encoding for Survey Month
+## 14. Cyclical Encoding for Survey Month
 
 Survey month (1–12) is encoded as `sin(2π·month/12)` and `cos(2π·month/12)`. This is necessary because:
 1. Month is a **circular** variable — December (12) is closer to January (1) than to June (6) in the seasonal cycle
