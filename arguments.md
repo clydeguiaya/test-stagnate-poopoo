@@ -191,28 +191,6 @@ The `actual_hours` coefficient dominating negatively is expected: workers who ar
 
 ---
 
-## 10. K-Nearest Neighbors Model
-
-**Why KNN as a comparison model?**
-
-1. **Non-parametric:** KNN makes no assumptions about the functional form of the relationship between features and target. This contrasts with logistic regression's linear log-odds assumption and LinearSVC's linear margin assumption. If stagnation risk has non-linear interaction structure (e.g., age × industry), KNN can capture it where linear models cannot.
-
-2. **Instance-based learning:** KNN classifies by majority vote among the k most similar training records. This provides an intuitive mental model — a worker is classified stagnant if the 15 most similar historical workers were predominantly stagnant.
-
-**Hyperparameter choices:**
-
-- **`n_neighbors=15`:** Odd number to avoid ties in binary classification. Larger k smooths the decision boundary and reduces variance at the cost of some bias. At 50,000 training records, k=15 is a standard starting point.
-- **`metric='euclidean'`:** Straight-line distance in the standardised 12-dimensional feature space. Appropriate after `StandardScaler` equalises feature magnitudes.
-- **`n_jobs=-1`:** Parallelises the distance computation across all CPU cores.
-
-**Why subsample to 50,000?**
-
-KNN is a lazy learner — it has no training phase. Every prediction requires computing distances to all stored training records. At 2,060,789 training records, predicting 679,707 test points would require ~1.4 trillion distance computations, making the notebook non-interactive. A balanced subsample of 50,000 (25,000 per class) reduces this to 34 billion computations — feasible on a laptop. The balanced draw also eliminates the class imbalance problem for the majority-vote step.
-
-**Scaling requirement:** Distance-based algorithms are the most sensitive to feature scale of the three models implemented here. Without `StandardScaler`, `gdp_per_employed` (~$50,000–$60,000 range) would numerically dominate `sex` (1–2 range) by four orders of magnitude, making every distance calculation effectively a comparison of GDP values.
-
----
-
 ## 11. Linear SVM Model
 
 **Why LinearSVC as a comparison model?**
